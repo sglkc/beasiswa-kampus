@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Tugas Praktik Demonstrasi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <link rel="stylesheet" href="dist/css/@unocss/reset/tailwind-compat.min.css" />
+    <script src="dist/pages/hasil.js" type="module"></script>
+    <script src="dist/js/@unocss/runtime.js" defer></script>
+    <script src="dist/js/unocss.config.js"></script>
+  </head>
+  <body class="bg-background flex flex-col gap-4" un-cloak>
+    <form class="mx-auto p-8 rounded grid gap-12 max-w-xl" autocomplete="off">
+      <h1 class="text-3xl font-bold text-center">Hasil Pendaftaran</h1>
+      <div id="form" class="grid grid-cols-5 gap-8">
+        <template id="form-slot"></template>
+        <label class="label" for="status_ajuan">Status ajuan</label>
+        <input class="input" name="status_ajuan" type="text" value="Belum diverifikasi" readonly required />
+        <div class="col-span-5 flex">
+          <a class="button bg-secondary text-dark" href="daftar.html">Kembali</a>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<html lang="id">
+  <head>
+    <title>Tugas Praktik Demonstrasi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <link rel="stylesheet" href="dist/css/@unocss/reset/tailwind-compat.min.css" />
+    <script src="dist/pages/index.js" type="module"></script>
+    <script src="dist/js/@unocss/runtime.js" defer></script>
+    <script src="dist/js/unocss.config.js"></script>
+  </head>
+  <body class="bg-background flex flex-col gap-4" un-cloak>
+    <main class="p-8 md:p-16 grid gap-16 mx-auto">
+
+      <header class="mx-auto py-8 grid gap-16 max-w-2xl text-center">
+        <div class="grid gap-12 lg:gap-16">
+          <h1 class="text-accent text-3xl lg:text-4xl font-bold">Beasiswa Kampus</h1>
+          <h2 class="text-4xl lg:text-5xl font-bold leading-12 lg:leading-16">Dukungan Pendidikan untuk Masa Depanmu</h2>
+          <p class="text-dark-100 text-lg lg:text-xl">
+            Kami menawarkan berbagai macam beasiswa kampus untuk mahasiswa dari berbagai latar belakang.
+            Beasiswa kami didasarkan pada prestasi akademik, prestasi non-akademik, dan kriteria lainnya.
+          </p>
+        </div>
+        <div class="flex flex-col md:flex-row justify-center gap-4 md:gap-8">
+          <a class="button--cta bg-primary text-background" href="daftar.html">Daftar Sekarang</a>
+          <a class="button--cta bg-secondary" href="hasil.html">Hasil Pendaftaran</a>
+        </div>
+        <div id="scroll" class="m-auto px-0.5 py-12 bg-secondary"></div>
+      </header>
+
+      <section class="grid gap-16 max-w-2xl xl:max-w-7xl">
+        <h2 class="title">Pilihan beasiswa</h2>
+        <div id="beasiswa" class="grid grid-cols-1 xl:grid-cols-3 gap-16"></div>
+      </section>
+
+      <footer class="px-8 md:px-16 py-8 bg-dark-400 text-light-600 rounded text-right">
+        <p>
+          <span class="text-sm md:text-base">Copyright 2023 &copy;</span>
+          <span class="text-lg md:text-xl font-bold">Beasiswa Kampus</span>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

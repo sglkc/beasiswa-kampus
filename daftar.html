@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Tugas Praktik Demonstrasi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <link rel="stylesheet" href="dist/css/@unocss/reset/tailwind-compat.min.css" />
+    <script src="dist/pages/daftar.js" type="module"></script>
+    <script src="dist/js/@unocss/runtime.js" defer></script>
+    <script src="dist/js/unocss.config.js"></script>
+  </head>
+  <body class="bg-background flex flex-col gap-4" un-cloak>
+    <form class="mx-auto p-8 rounded grid gap-12 max-w-xl" autocomplete="off">
+      <h1 class="text-3xl font-bold text-center">Pendaftaran Beasiswa</h1>
+      <div id="form" class="grid grid-cols-5 gap-8">
+        <template id="form-slot"></template>
+
+        <input
+          class="input peer sr-only"
+          id="berkas"
+          name="berkas"
+          type="file"
+          accept="image/*,.pdf,application/zip,application/x-zip-compressed,application/vnd.rar"
+          required
+        />
+
+        <label
+          class="upload peer-disabled:cursor-default peer-disabled:opacity-50 peer-invalid:outline peer-invalid:outline-2 peer-invalid:outline-red"
+          for="berkas"
+        >
+          <span>Upload berkas syarat</span>
+          <img src="assets/icons/cloud.svg" />
+        </label>
+
+        <div class="col-span-5 flex justify-between gap-4">
+          <a class="button bg-secondary text-dark" href="index.html">Kembali</a>
+          <button class="button bg-primary text-background disabled:opacity-50" type="submit">Daftar</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
