@@ -14,7 +14,7 @@ window.__unocss = {
   },
   shortcuts: {
     label: 'col-span-2',
-    input: 'col-span-3 px-2 py-1 bg-white/50 rounded outline outline-secondary outline-2 invalid:outline-red disabled:bg-secondary/25 read-only:bg-secondary read-only:opacity-75 read-only:pointer-events-none',
+    input: 'col-span-3 px-2 py-1 bg-white/50 rounded outline outline-secondary outline-2 invalid:outline-red disabled:bg-secondary/25 read-only:bg-secondary read-only:opacity-75',
     'upload': 'py-8 bg-secondary col-span-5 flex flex-col items-center rounded cursor-pointer hover:bg-secondary transition-colors',
     'button': 'px-6 py-4 rounded',
     'button--cta': 'button text-base lg:text-lg shadow-lg transition-all hover:shadow-primary/50 hover:-translate-y-1',
